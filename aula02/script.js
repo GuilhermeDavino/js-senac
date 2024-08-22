@@ -1,4 +1,4 @@
-let num1 = 1;
+
 
 function problema1(num1) {
     if(num1 > 0) {
@@ -20,7 +20,7 @@ function problema2(num1) {
     }
 }
 
-let num2 = 30;
+
 function problema3(num2) {
     switch(true) {
         case num2 < 14:
@@ -43,9 +43,33 @@ function problema3(num2) {
     }
 }
 
-let nota = 8;
-
 function problema4(nota) {
+    switch(true) {
+        case nota <= 2:
+            console.log("F");
+            break;
+        case nota <= 4:
+            console.log("D");
+            break;
+        case nota <= 6:
+            console.log("C");
+            break;
+        case nota <= 8:
+            console.log("B");
+            break;
+        case nota <= 10:
+            console.log("A");
+            break;
+        default:
+            console.log("Nota inválida");
+            break;
+    }
+}
+
+let dia = 5;
+
+function problema5(nota) {
+    this.nota = nota;
     switch(true) {
         case nota <= 2:
             console.log("F");
@@ -68,27 +92,41 @@ function problema4(nota) {
     }
 }
 
-let dia = 5;
+function problema6(diaDaSemana) {
+    let dia = diaDaSemana;
+    switch(dia) {
+        case 1:
+            console.log("Domingo");
+            break;
+        case 2:
+            console.log("Segunda");
+            break;
+        case 3:
+            console.log("Terça");
+            break;
+        case 4:
+            console.log("Quarta");
+            break;
+        case 5:
+            console.log("Quinta");
+            break;
+        case 6:
+            console.log("Sexta");
+            break;
+        case 7:
+            console.log("Sábado");
+            break;
+        default: 
+            console.log("Dia inválido");
+    }
+}
 
-function problema5(dia) {
-    switch(true) {
-        case nota <= 2:
-            console.log("F");
-            break;
-        case nota <= 4:
-            console.log("D");
-            break;
-        case nota <= 6:
-            console.log("C");
-            break;
-        case num2 <= 8:
-            console.log("B");
-            break;
-        case num2 <= 10:
-            console.log("A");
-            break;
-        default:
-            console.log("Nota inválida");
-            break;
+function problema7(faturamento) {
+    if(faturamento < 1000.00) {
+        console.log("Sem bônus")
+    } else if(faturamento >= 1000.00 && faturamento <= 5000.00) {
+        console.log("bônus = " + (faturamento * 0.05));
+    } else {
+        console.log("bônus = " + (faturamento * 0.1));
     }
 }
